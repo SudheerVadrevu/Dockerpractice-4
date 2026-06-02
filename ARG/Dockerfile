@@ -1,7 +1,7 @@
 ARG version
-FROM almalinux:${version}
-ARG mobile
-ARG laptop
+FROM almalinux:${version:-8.6}
+ARG mobile=Nokia
+ARG laptop=HCL
 RUN echo "mobile is ${mobile} laptop is ${laptop} "
 CMD [ "sleep" , "100" ]
 
