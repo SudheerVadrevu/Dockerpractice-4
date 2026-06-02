@@ -2,6 +2,7 @@ ARG version
 FROM almalinux:${version:-8.6}
 ARG mobile=Nokia
 ARG laptop=HCL
+ENV TV=LG
 RUN echo "mobile is ${mobile} laptop is ${laptop} "
 CMD [ "sleep" , "100" ]
 
