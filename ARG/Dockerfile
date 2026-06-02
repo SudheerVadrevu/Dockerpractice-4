@@ -3,7 +3,7 @@ FROM almalinux:${version:-8.6}
 ARG mobile=Nokia
 ARG laptop=HCL
 ENV TV=LG
-RUN echo "mobile is ${mobile} laptop is ${laptop} "
+RUN echo "mobile is ${mobile} laptop is ${laptop} TV is ${TV} "
 CMD [ "sleep" , "100" ]
 
 
